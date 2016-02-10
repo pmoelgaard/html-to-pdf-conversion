@@ -56,8 +56,8 @@ All endpoints in the public API is available through this library.
 
 ---
 
-## convert
-Takes a URL and returns the captured image, optionally if the export or filename options are passed, will export and save the image respectively.
+## Convert (simple case)
+Takes a URL and returns the captured image.
 
 ###### Define Query
 
@@ -75,7 +75,37 @@ Takes a URL and returns the captured image, optionally if the export or filename
 	});
     
 ###### Response
- 
+[The binary content of the PDF file]
+
+---
+
+## Convert (w. export)
+Takes a URL, saves the PDF to a local file defined by the export argument and returns a response object.
+
+###### Define Query
+
+	var convertQuery = {
+    	document_url: 'https://en.wikipedia.org/wiki/Special:Random',
+    	export: 'path_to_local_file.pdf';
+	};
+
+###### Simple Request (using Callback)
+
+	convert(convertQuery, function (err, result) {
+    	if (err) {
+        	return console.log('Convert Callback (Error): ' + JSON.stringify(err));
+    	}
+	    console.log('Convert Callback (Result): ' + JSON.stringify(result));
+	});
+    
+###### Response
+```
+{
+	"success": true,
+    "info": "The PDF file has been saved to your local file system",
+    "file_name": "path_to_local_file.pdf"
+}
+```
 
 ---
 
