@@ -97,6 +97,7 @@ In order to run the tests, the following environment variables needs to be set:
 
 ```
 ACCESS_KEY = [access_key]
+SECRET_KEY = [secret_key]
 ```
 
 
