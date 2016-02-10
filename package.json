@@ -1,6 +1,6 @@
 {
   "name": "html-to-pdf-conversion",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "High Quality HTML to PDF Conversion API for Developers",
   "main": "index.js",
   "scripts": {
