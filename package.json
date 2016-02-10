@@ -1,0 +1,35 @@
+{
+  "name": "html-to-pdf-conversion",
+  "version": "0.1.0",
+  "description": "High Quality HTML to PDF Conversion API for Developers",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://pmoelgaard@github.com/pmoelgaard/html-to-pdf-conversion.git"
+  },
+  "keywords": [
+    "html to pdf api",
+    "html 2 pdf"
+  ],
+  "author": "Peter Andreas Moelgaard <admin@petermolgard.com> (http://petermolgaard.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pmoelgaard/html-to-pdf-conversion/issues"
+  },
+  "homepage": "https://github.com/pmoelgaard/html-to-pdf-conversion#readme",
+  "devDependencies": {
+    "mocha": "^2.3.4",
+    "chai": "^3.4.1",
+    "dotenv": "^2.0.0"
+  },
+  "dependencies": {
+    "async": "^1.5.2",
+    "lodash": "^4.0.1",
+    "promise": "^7.1.1",
+    "request": "^2.69.0"
+  },
+  "tonicExampleFilename": "example/preview.js"
+}
