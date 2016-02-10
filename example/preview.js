@@ -1,6 +1,7 @@
 var API = require('email-address-validation');
 var api = new API({
-    access_key: 'access_key'
+    access_key: 'access_key',
+    secret_key: 'secret_key'
 });
 
 var document_url = 'https://en.wikipedia.org/wiki/Special:Random';
